@@ -1,0 +1,82 @@
+.footer-conteiner {
+    background-color: black;
+    height: 200px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+
+}
+
+.conteiner-seçao {
+    height: auto;
+    background-color: aliceblue;
+    color: black;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-image: url(/img/imgns.jpg);
+    padding: 10px;
+}
+
+.texto-secao {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.158);
+    backdrop-filter: blur(20px);
+    width: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.paragrafo-secao {
+    color: aliceblue;
+    margin-top: 30px;
+    width: auto;
+    background-color: rgba(207, 112, 226, 0.349);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+}
+
+h4 {
+    color: aliceblue;
+}
+
+.redes {
+    width: 50px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.redes:hover {
+    transform: scale(1.5);
+
+}
+
+.img-redes {
+    padding: 10px;
+
+}
+
+.subir {
+    border-radius: 100%;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    z-index: 200;
+    height: 70px;
+    width: 70px;
+    left: 30px;
+    top: 200px;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inicio-texto {
+    color: black;
+}

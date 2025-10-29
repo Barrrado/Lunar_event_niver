@@ -1,0 +1,38 @@
+.conteiner-menu {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(138, 5, 127, 0.541);
+    width: 100%;
+    display: flex;
+    bottom: 200px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu_li {
+    padding: 10px;
+    color: aliceblue;
+    transition: all 0.4s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.menu_li:hover {
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu_li a {
+    text-decoration: none;
+
+    color: inherit;
+
+    display: block;
+
+}
