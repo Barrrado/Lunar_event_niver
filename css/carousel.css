@@ -49,3 +49,26 @@
     background-color: rgba(0, 0, 0, 0.247);
     backdrop-filter: blur(50%);
 }
+
+@media only screen and (max-width: 430px) {
+    .carousel-inner {
+        height: 150px;
+    }
+
+    .sub-texto {
+
+        top: 7px;
+        left: 5px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .carousel-inner {
+        height: auto;
+    }
+
+    .Section-2 {
+        height: 261px;
+    }
+
+}

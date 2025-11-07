@@ -5,3 +5,10 @@
     margin-top: 10px;
     overflow: hidden;
 }
+
+@media only screen and (max-width: 430px) {
+    .Section-2 {
+        height: auto;
+    }
+
+}

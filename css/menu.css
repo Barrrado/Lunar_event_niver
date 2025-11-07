@@ -1,10 +1,10 @@
 .conteiner-menu {
     position: absolute;
     z-index: 10;
-    background-color: rgba(138, 5, 127, 0.541);
+    background-color: rgba(138, 5, 127, 0.938);
     width: 100%;
     display: flex;
-    bottom: 200px;
+    bottom: 400px;
 }
 
 .menu {
@@ -34,5 +34,94 @@ html {
     color: inherit;
 
     display: block;
+}
 
+.Menu-mobile {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: rgba(109, 30, 112, 0.39);
+    position: absolute;
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+}
+
+.Hanburger {
+    width: 30px;
+    height: 7px;
+    border-radius: 20px;
+    margin: 2px;
+    position: relative;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(231, 186, 186);
+}
+
+@media only screen and (max-width: 430px) {
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteiner-menu {
+        bottom: 356px;
+        opacity: 0;
+        animation: scale-down-ver-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    }
+
+    .active1 {
+        opacity: 1;
+        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    .fechar1 {
+        opacity: 1;
+        animation: scale-down-ver-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .Menu-mobile {
+        display: none;
+    }
+}
+
+@keyframes scale-up-ver-top {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+}
+
+@keyframes scale-down-ver-top {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(0.0);
+        transform: scaleY(0.0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .conteiner-menu {
+        bottom: 343px;
+    }
 }
