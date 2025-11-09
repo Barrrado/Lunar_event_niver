@@ -50,7 +50,7 @@
     backdrop-filter: blur(50%);
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (max-width: 430px) {
     .carousel-inner {
         height: 150px;
     }
