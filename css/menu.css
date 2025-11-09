@@ -120,8 +120,8 @@ html {
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 700px) {
     .conteiner-menu {
-        bottom: 343px;
+        bottom: 319px;
     }
 }
